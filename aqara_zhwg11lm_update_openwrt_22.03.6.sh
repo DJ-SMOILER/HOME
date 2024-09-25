@@ -4,8 +4,7 @@ set -e
 cd /tmp
 echo "Starting the procedure for updating OpenWRT from version 21 to 22.03.6"
 sleep 2
-
-wget https://openlumi.github.io/releases/22.03.6/targets/cortexa7/u-boot-xiaomi_dgnwg05lm/u-boot.imx -O /tmp/u-boot.imx
+wget https://openlumi.github.io/releases/22.03.6/targets/imx/cortexa7/u-boot-xiaomi_dgnwg05lm/u-boot.imx -O /tmp/u-boot.imx
 wget https://openlumi.github.io/releases/22.03.6/targets/cortexa7/openlumi-22.03.6-imx-cortexa7-imx6ull-aqara-zhwg11lm.dtb -O /tmp/openlumi-22.03.6-imx-cortexa7-imx6ull-aqara-zhwg11lm.dtb
 wget https://openlumi.github.io/releases/22.03.6/targets/cortexa7/openlumi-22.03.6-imx-cortexa7-aqara_zhwg11lm-squashfs-sysupgrade.bin -O /tmp/openlumi-22.03.6-imx-cortexa7-aqara_zhwg11lm-squashfs-sysupgrade.bin
 echo "Done. The files are downloaded to the tmp folder"
